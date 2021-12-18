@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<DialogPane prefHeight="400.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContactController">
+   <headerText>
+      Fill in the information for the new Contact
+   </headerText>
+   <content>
+      <GridPane vgap="10" hgap="10">
+
+         <Label text="First name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+         <TextField fx:id="firstName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+         <Label text="Last name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+         <TextField fx:id="lastName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+         <Label text="Phone number: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+         <TextField fx:id="phoneNumber" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+         <Label text="Notes: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+         <TextField fx:id="notes" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+      </GridPane>
+   </content>
+</DialogPane>
